@@ -1,11 +1,11 @@
-//******************************************************
-//@file collegemain.cc
-//@author Zachary Hughes
-//3/1/18
-//@section DESCRIPTION
-// This is the main for the college object that runs the user interface
-// The program runs and gives you a menu option of how to run the program
-**********************************************************//
+/**
+*@file collegemain.cc
+*@author Zachary Hughes
+*3/1/18
+*@section DESCRIPTION
+* This is the main for the college object that runs the user interface
+* The program runs and gives you a menu option of how to run the program
+*/
 
 #include <iostream>
 #include <fstream>

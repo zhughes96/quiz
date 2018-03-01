@@ -1,11 +1,11 @@
-//***********************************************************************
-//@file course.cc
-//@author Zachary Hughes
-//3/1/18
-//@section DESCRIPTION
-// This file has the course object. It gives the information and basic
-//functions for a user friendly time to compare and add them
-**************************************************************************//
+/**
+*@file course.cc
+*@author Zachary Hughes
+*3/1/18
+*@section DESCRIPTION
+* This file has the course object. It gives the information and basic
+*functions for a user friendly time to compare and add them
+*/
 #include "course.h"
 #include<cstdlib>
 #include<iostream>
