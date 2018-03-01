@@ -1,8 +1,11 @@
-/***********************************************************************
-	The implementation file for course.h, which describes a college
-	course.
-		John Dolan		School of EECS		Summer2013
-**************************************************************************/
+//***********************************************************************
+//@file course.cc
+//@author Zachary Hughes
+//3/1/18
+//@section DESCRIPTION
+// This file has the course object. It gives the information and basic
+//functions for a user friendly time to compare and add them
+**************************************************************************//
 #include "course.h"
 #include<cstdlib>
 #include<iostream>
@@ -14,6 +17,14 @@ course::course(){
     hours = 0.0;
 }
 
+/**
+*adds a course
+* this function takes in a file and reads in line by line what the course
+* will be and the parameters will be the course number, grade receieved, and
+* how many credit hours the course is.
+@param takes in a file/user input
+@return nothing
+*/
 void course::input(std::istream& ins){
     if(ins == cin){
 	cout<<"Course Number: ";
@@ -39,6 +50,13 @@ void course::input(std::istream& ins){
     }
 }
 
+/**
+*Shows the output of all the courses
+*Can output to a file or to the screen of the course information
+*that one is pointing too
+@param takes in an output type
+@return the course information
+*/
 void course::output(std::ostream& outs)const{
     if(outs == cout){
 	outs<<"Course Number:"<<course_number<<endl;

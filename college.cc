@@ -1,9 +1,13 @@
 //********************
-//Matthew Aberegg
-//Project 3
-//CS 2401
-//10/8/2015
+//@file college.cc
+//@author Zachary Hughes
+//3/1/18
+//@section DESCRIPTION
+//This program uses nodes to connect the object college to the another one
+//College takes a name which is a string variable.
 //********************
+*/
+
 #include "college.h"
 #include<cstdlib>
 #include<iostream>
@@ -129,6 +133,13 @@ void College::remove(std::string coursename){
 }
 }
 
+/**
+*outputs all the courses
+* displays the course and then moves the pointer to the next course
+* this shows every course that is in the node pointers
+@param takes in an output file
+@return nothing
+*/
 void College::display(std::ostream& outs){
 	node * ptr;
 	ptr = head;
@@ -193,11 +204,3 @@ void College::load(std::istream& ins){
 		ptr -> set_link (NULL);
   }
 }
-
-
-
-
-
-
-
-
